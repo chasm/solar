@@ -1,0 +1,9 @@
+<h1><%= @article.title %></h1>
+<div><%= @article.published_on %></div>
+<p>
+  <%= link_to 'Edit this article', edit_article_url(@article) %> |
+  <%= link_to 'Show all articles', articles_url %>
+</p>
+<div>
+  <%= @article.content %>
+</div>
